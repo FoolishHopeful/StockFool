@@ -1,0 +1,111 @@
+/*
+ Theme Name:   Twenty Twenty-One Child
+ Theme URI:    https://fool.ca/
+ Description:  A child theme of Twenty Twenty-One WordPress theme.
+ Author:       Drew Teichman + The Wordpress Steam
+ Author URI:   https://fool.ca/
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+@import url("../twentytwentyone/style.css");
+
+.authorTitle, .postDate {
+  font-weight: 500;
+}
+
+.authorTitle {
+  float: left;
+}
+
+.postDate {
+  float: right;
+}
+
+.authorBox {
+  position: relative;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(to top, #dbdbdb 0%, #fbf9f9 100%);
+  color: #757575;
+  border: 1px solid #cacaca;
+  padding: 5px;
+  font-size: 14px;
+  margin-top: 10px;
+  z-index: 5;
+  text-align: left;
+}
+
+.selectorContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.selectorHeading {
+  border: 1px solid #cacaca;
+  position: relative;
+  background: linear-gradient(to top, #dbdbdb 0%, #fbf9f9 100%);
+  margin: 0rem 0rem -1rem;
+  z-index: 10;
+  padding: 0.5em;
+  box-shadow: 2px 2px rgb(0 0 0 / 5%);
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #757575;
+}
+
+.selectorTitle {
+  color: #43B02A;
+}
+
+.selectorLink {
+  text-decoration: none;
+}
+
+.selectorBox {
+  flex: 1;
+  margin-top: .5rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(to top, #dbdbdb 0%, #fbf9f9 100%);
+  color: #757575;
+  border: 1px solid #cacaca;
+  padding: 5px;
+  min-width: 24vh;
+}
+
+.selectorStock {
+  background: #43B02A;
+  border: solid 1px #007A33;
+  color: white;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+  position: relative;
+}
+
+.archive-excerpt {
+  text-decoration: none;
+}
+
+span.archive-title {
+  font-weight: 700;
+}
+
+.archive-box {
+  background: linear-gradient(to top, #dbdbdb 0%, #fbf9f9 100%);
+  box-shadow: 2px 2px rgb(0 0 0 / 5%);
+  padding: 10px;
+  border: 1px black solid;
+}
+
+.archive-button {
+  background: linear-gradient(0deg, #4cd964, #76e288);
+  color: white;
+  display: inline-block;
+  padding: 0px 10px;
+}
