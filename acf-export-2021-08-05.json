@@ -1,0 +1,286 @@
+[
+    {
+        "key": "group_610b817ab3eeb",
+        "title": "Article Selector",
+        "fields": [
+            {
+                "key": "field_610b8226a29a0",
+                "label": "Selector Title",
+                "name": "selector_title",
+                "type": "text",
+                "instructions": "Input the title of the Selector Widget.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Recommenced Articles",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_610bb31f8d608",
+                "label": "Select Stock Recommendations",
+                "name": "articles",
+                "type": "post_object",
+                "instructions": "Select recommended stocks to show in conjunction with this article.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "recommendations"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "multiple": 1,
+                "return_format": "id",
+                "ui": 1
+            },
+            {
+                "key": "field_610c088024d1d",
+                "label": "Sort Order",
+                "name": "sort_order",
+                "type": "select",
+                "instructions": "Select the order in which the article links will be displayed.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "ASC": "Ascending",
+                    "DESC": "Descending"
+                },
+                "default_value": "DESC",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/recommended"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_6108ab226b4cd",
+        "title": "Motley Fool",
+        "fields": [
+            {
+                "key": "field_6108ac3afb0d2",
+                "label": "Author",
+                "name": "author",
+                "type": "user",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "role": [
+                    "editor",
+                    "author",
+                    "administrator"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "return_format": "array"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/author"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_610b817ab3eeb-copy",
+        "title": "News Selector",
+        "fields": [
+            {
+                "key": "field_610c26217ec26",
+                "label": "Selector Title",
+                "name": "selector_title",
+                "type": "text",
+                "instructions": "Name you would like displayed for Selector box.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "News Articles",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_610c26917ec27",
+                "label": "News Articles",
+                "name": "articles",
+                "type": "post_object",
+                "instructions": "Select news articles to show in conjunction with this article.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "news"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "multiple": 1,
+                "return_format": "id",
+                "ui": 1
+            },
+            {
+                "key": "field_610c26d7aab04",
+                "label": "Sort Order",
+                "name": "sort_order",
+                "type": "select",
+                "instructions": "Select the order in which the article links will be displayed.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "ASC": "Ascending",
+                    "DESC": "Descending"
+                },
+                "default_value": "DESC",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/news"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_610badefcaad2",
+        "title": "Taxonomy",
+        "fields": [
+            {
+                "key": "field_610badfd9cd04",
+                "label": "Exchange",
+                "name": "exchange",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_610bae4d3cbea",
+                "label": "Symbol",
+                "name": "symbol",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "stock_index"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
