@@ -1,0 +1,2 @@
+# StockFool
+StockFool WordPress Plugin
