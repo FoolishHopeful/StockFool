@@ -15,7 +15,7 @@ The elements used are broken up as follows:
 ## StockFool
 StockFool is a plugin build to complete the API call portion of the project requirements. Based on its usage it will either populate an action bar at the bottom of the page or display. I used the native WordPress shortcode function to build this. I also implemented an OOP based settings class within the plugin files, however it is only used to store the API key for Financial Modeling Prep.
 
-To active the shortcode use the following formate:
+To active the shortcode use the following format:
 
 [stockdisplay=”Sample Text” type=”bar|box” symbol=”SBUX”]
 
